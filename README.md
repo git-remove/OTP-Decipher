@@ -28,7 +28,20 @@ If we have some previous knowledge about the message, for example all the messag
 This project will also adopt this method to decipher the cipher text.
 
 ## Usage Guide
-### todo: add the usage guide
+
+### Generate Cipher Text
+
+### Decipher Cipher Text
+
+The `decipher.py` will accept a file that contains the cipher texts. The first line of the file is the number of cipher texts (in my example, 7).
+
+Simply run `decipher.py < cipher_text > decipher_result` in the command line and the decipher result will be stored in the file `decipher_result`.
+
+There is an argument `full` to `decipher.py`. If `full` is set to `0`, all the characters that cannot be determined (more than one possible characters or the character list not covering all character in the message) will be represent as `*`. If `full` is set to `1`, then the characters that cannot be determined exactly will be listed in curly braces.
+
+### Modify the set of possible characters
+
+To modify the set of possible characters in messages, simply modify the variable `chars` on line 1 in the file `util_function.py`. Each character in the string represents a possible character.
 
 ## Contact
 If you have any questions or better ways to solve this problem, you can raise an issue or send an email to Yiwen(yiw.che@gmail.com)

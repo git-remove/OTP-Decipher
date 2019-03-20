@@ -35,7 +35,7 @@ def detect_flaw(text_index1, text_index2, xor_result, plaintext_set, xor_dict, p
 
 # main function of the program
 def main():
-    full_output = 1
+    full_output = 0
     ciphertext_set = []
     plaintext_set = []
     plaintext_possible_char = []

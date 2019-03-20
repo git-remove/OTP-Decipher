@@ -1,0 +1,8 @@
+7
+This file contains seven messages that are used to test cipher and decipher
+This is the second message and there are five messages below this one
+Previous one is the second message and following is the third message
+One Time Pad Algorithm is a simple algorithm used to cipher some message
+You should not use the key more than once when using one time pad algorithm
+Otherwise the attacker can do xor and gain some knowledge about these message
+This is the last message I will use and there are six messages above this
