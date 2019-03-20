@@ -3,9 +3,9 @@
 
 ## One Time Pad Algorithm
 
-One Time Pad Algorithm is a simple algorithm used to cipher some message. Given a key `k` and a message `m`, the algorithm will calculate the cipher text by `c = m mod k`.
+One Time Pad Algorithm is a simple algorithm used to cipher some message. Given a key `k` and a message `m`, the algorithm will calculate the cipher text by `c = m xor k`.
 
-Both sender and receiver will share the same key `k`. Therefore it is easy for the receiver to decipher the cipher text by `m = c mod k = m mod k mod k = m`.
+Both sender and receiver will share the same key `k`. Therefore it is easy for the receiver to decipher the cipher text by `m = c xor k = m xor k xor k = m`.
 
 For more information of One Time Pad algorithm, you can refer to this [link](https://en.wikipedia.org/wiki/One-time_pad).
 
