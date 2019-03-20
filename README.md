@@ -31,13 +31,15 @@ This project will also adopt this method to decipher the cipher text.
 
 ### Generate Cipher Text
 
+The `cipher.py` accepts a file that contains the message needed to be ciphered.
+
 ### Decipher Cipher Text
 
 The `decipher.py` will accept a file that contains the cipher texts. The first line of the file is the number of cipher texts (in my example, 7).
 
 Simply run `decipher.py < cipher_text > decipher_result` in the command line and the decipher result will be stored in the file `decipher_result`.
 
-There is an argument `full` to `decipher.py`. If `full` is set to `0`, all the characters that cannot be determined (more than one possible characters or the character list not covering all character in the message) will be represent as `*`. If `full` is set to `1`, then the characters that cannot be determined exactly will be listed in curly braces.
+There is an argument `full` to `decipher.py`. If `full` is set to `0`, all the characters that cannot be determined (more than one possible characters or the character list not covering all character in the message) will be represent as `*`. If `full` is set to `1`, then the characters that cannot be determined exactly will be listed in curly braces. `full` is set to `0` by default. To set it to `1`, use `--full=1` in the command.
 
 ### Modify the set of possible characters
 

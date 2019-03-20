@@ -1,5 +1,6 @@
 from util_function import *
 import util_function
+import argparse
 
 # Read input cipher text needed to decipher
 def read_input(ciphertext_set):
@@ -35,7 +36,13 @@ def detect_flaw(text_index1, text_index2, xor_result, plaintext_set, xor_dict, p
 
 # main function of the program
 def main():
-    full_output = 0
+    parser = argparse.ArgumentParser(description='Process argument full.')
+    parser.add_argument('--full', type = int, help = 'whether display all possible characters or not, default is 0')
+    args = parser.parse_args()
+    if args.full != None:
+        full_output = int(args.full)
+    else:
+        full_output = 0
     ciphertext_set = []
     plaintext_set = []
     plaintext_possible_char = []
