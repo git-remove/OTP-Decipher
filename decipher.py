@@ -1,4 +1,5 @@
 from util_function import *
+import util_function
 
 # Read input cipher text needed to decipher
 def read_input(ciphertext_set):
