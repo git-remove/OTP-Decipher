@@ -31,7 +31,7 @@ This project will also adopt this method to decipher the cipher text.
 
 ### Generate Cipher Text
 
-The `cipher.py` accepts a file that contains the message needed to be ciphered.
+The `cipher.py` accepts a file that contains the message needed to be ciphered. The first line is the number of messages. I have provided an example message file `plain_text`. To use the cipher, you can simply run `cipher.py < plain_text > cipher_text` in the command line. The key is generated randomly with python inherit `random.randint()` function.
 
 ### Decipher Cipher Text
 
